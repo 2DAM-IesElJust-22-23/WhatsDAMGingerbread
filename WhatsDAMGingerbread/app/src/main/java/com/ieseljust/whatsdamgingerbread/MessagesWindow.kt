@@ -2,6 +2,8 @@ package com.ieseljust.whatsdamgingerbread
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.ieseljust.whatsdamgingerbread.Message.llistatMsn
 import com.ieseljust.whatsdamgingerbread.databinding.ActivityMessagesWindowBinding
 
 class MessagesWindow : AppCompatActivity() {
@@ -28,7 +30,7 @@ class MessagesWindow : AppCompatActivity() {
 
         val recyclerView=binding.MessagesRecyclerView
 
-        val layoutManager=LinearLayoutManager(this)
+        val layoutManager= LinearLayoutManager(this)
         recyclerView.layoutManager=layoutManager
 
         val adapter = AdaptadorMessages(llistatMsn)
@@ -36,7 +38,7 @@ class MessagesWindow : AppCompatActivity() {
 
 
         enviarMensage.setOnClickListener(){
-            llistatMsn.add(Mensage(mensage.toString(),mensageText.text.toString()))
+            llistatMsn.add(Mensages(mensage.toString(),mensageText.text.toString()))
             binding.MessagesRecyclerView.adapter?.notifyItemInserted(llistatMsn.size-1)
             mensageText.text.clear()
         }

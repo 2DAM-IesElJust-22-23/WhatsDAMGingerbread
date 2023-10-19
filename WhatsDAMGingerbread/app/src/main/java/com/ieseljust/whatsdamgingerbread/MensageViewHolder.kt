@@ -11,10 +11,8 @@ class MessageViewHolder(itemView:View) : RecyclerView.ViewHolder(itemView) {
     private val mText = itemView.findViewById(R.id.msg_text) as TextView
     private val hora = itemView.findViewById(R.id.msg_me_timestamp) as TextView
 
-    /*
-    // Funció que s'utiliza per a vincular les dades del mensaje al diseny.
-     */
-    fun bind(message: Messages){
+
+    fun bind(message: Mensages){
 
         mText.text = message.mensage
 

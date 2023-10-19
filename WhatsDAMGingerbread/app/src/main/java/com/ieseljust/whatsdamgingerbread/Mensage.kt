@@ -1,19 +1,19 @@
 package com.ieseljust.whatsdamgingerbread
 
 
-class Messages(
+class Mensages(
     var usuari:String,
     var mensage:String
 )
 
 object Message{
 
-    var llistatMsn =mutableListOf<Messages>()
+    var llistatMsn =mutableListOf<Mensages>()
 
 
     fun add (usuari:String, text:String){
 
-        var mensage = Messages(usuari,text)
+        var mensage = Mensages(usuari,text)
         llistatMsn.add(mensage)
     }
 }

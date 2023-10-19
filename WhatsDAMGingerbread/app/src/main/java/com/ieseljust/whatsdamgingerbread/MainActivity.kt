@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
        if(nickName !=""){
            intent.putExtra("nickName", nickName)
-           if (isNumericAddress("ip", ip))
+           if (isNumericAddress("ip, "+ ip))
                startActivity(intent)
        }
     }
