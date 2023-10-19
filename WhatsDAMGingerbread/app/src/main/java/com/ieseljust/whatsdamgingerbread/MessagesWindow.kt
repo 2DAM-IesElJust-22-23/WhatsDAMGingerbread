@@ -1,17 +1,17 @@
-package com.example.whatsdamgingerbread
+package com.ieseljust.whatsdamgingerbread
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.ieseljust.pmdm.whatsdamjellybean.databinding.ActivityMessagesWindowBinding
+import com.ieseljust.whatsdamgingerbread.databinding.ActivityMessagesWindowBinding
 
 class MessagesWindow : AppCompatActivity() {
 
     private lateinit var binding: ActivityMessagesWindowBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityMessagesWindowBinding.inflate(layoutInflater)
         val view2 = binding.root
-        setContentView(view)
+        setContentView(view2)
 
         /**
          *Los intentos de intent los guardamos en variables
@@ -20,9 +20,9 @@ class MessagesWindow : AppCompatActivity() {
 
        val mensage = intent.getStringExtra("nickName")
         val ipValue = intent.getStringExtra(" ip")
-        binding.connecttionInfoTextView.text = "Conectado a "+ipValue+" como "+mensage
+        binding.MessageText.text = "Conectado a "+ipValue+" como "+mensage
 
-        binding.sendMensage.setOnClickListener{
+        binding.sendMessage.setOnClickListener{
             binding.MessageText.text.clear()
         }
     }

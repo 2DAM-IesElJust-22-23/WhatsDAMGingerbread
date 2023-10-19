@@ -1,4 +1,4 @@
-package com.example.whatsdamgingerbread
+package com.ieseljust.whatsdamgingerbread
 
 import org.junit.Test
 

@@ -1,13 +1,18 @@
-package com.example.whatsdamgingerbread
+package com.ieseljust.whatsdamgingerbread
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.content.Intent
 import android.net.InetAddresses.isNumericAddress
-import com.ies.pmdm.whatsdamgingerbread.databinding.ActivityMainBinding
-import com.ies.pmdm.whatsdamgingerbread.databinding.ActivityMessagesWindowBinding
+import com.ieseljust.whatsdamgingerbread.databinding.ActivityMainBinding
+import com.ieseljust.whatsdamgingerbread.databinding.ActivityMessagesWindowBinding
+
+
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -22,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(baseContext, MessagesWidow::class.java)
         var nickName = binding.nickNameText.text.toString()
         var ip = binding.serverAddressText.text.toString()
-        if (nick != "") {
+        if (nickName != "") {
             intent.putExtra("nickname", nickName)
             if (isNumericAddress(ip)) {
                 intent.putExtra("Ip", ip)
