@@ -1,12 +1,10 @@
-package com.ieseljust.whatsdamgingerbread
+package com.ieseljust.whatsdamgingerbread.vista
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.content.Intent
 import android.net.InetAddresses.isNumericAddress
 import com.ieseljust.whatsdamgingerbread.databinding.ActivityMainBinding
-import com.ieseljust.whatsdamgingerbread.databinding.ActivityMessagesWindowBinding
-
 
 
 class MainActivity : AppCompatActivity() {

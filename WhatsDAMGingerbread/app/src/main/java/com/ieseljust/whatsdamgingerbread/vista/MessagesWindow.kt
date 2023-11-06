@@ -1,9 +1,11 @@
-package com.ieseljust.whatsdamgingerbread
+package com.ieseljust.whatsdamgingerbread.vista
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.ieseljust.whatsdamgingerbread.Message.llistatMsn
+import com.ieseljust.whatsdamgingerbread.ViewModels.AdaptadorMensage
+import com.ieseljust.whatsdamgingerbread.model.Mensages
+import com.ieseljust.whatsdamgingerbread.model.Message.llistatMsn
 import com.ieseljust.whatsdamgingerbread.databinding.ActivityMessagesWindowBinding
 
 class MessagesWindow : AppCompatActivity() {
@@ -33,7 +35,7 @@ class MessagesWindow : AppCompatActivity() {
         val layoutManager= LinearLayoutManager(this)
         recyclerView.layoutManager=layoutManager
 
-        val adapter = AdaptadorMessages(llistatMsn)
+        val adapter = AdaptadorMensage(llistatMsn)
         recyclerView.adapter =adapter
 
 

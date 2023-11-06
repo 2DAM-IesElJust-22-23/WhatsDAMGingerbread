@@ -1,10 +1,13 @@
-package com.ieseljust.whatsdamgingerbread
+package com.ieseljust.whatsdamgingerbread.ViewModels
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.ieseljust.whatsdamgingerbread.model.Mensages
+import com.ieseljust.whatsdamgingerbread.model.Message
+import com.ieseljust.whatsdamgingerbread.R
 
-class AdaptadorMessages(var listaMensajes: List<Messages>) :RecyclerView.Adapter<MessageViewHolder>(){
+class AdaptadorMensage(var listaMensajes: List<Mensages>) :RecyclerView.Adapter<MessageViewHolder>(){
 
     /*
     // Funció que crea una nova vista d'element en la llista.

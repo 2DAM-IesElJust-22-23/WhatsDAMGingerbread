@@ -1,8 +1,10 @@
-package com.ieseljust.whatsdamgingerbread
+package com.ieseljust.whatsdamgingerbread.ViewModels
 
 import android.view.View
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.ieseljust.whatsdamgingerbread.model.Mensages
+import com.ieseljust.whatsdamgingerbread.R
 import java.text.SimpleDateFormat
 import java.util.Date
 

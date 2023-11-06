@@ -1,4 +1,4 @@
-package com.ieseljust.whatsdamgingerbread
+package com.ieseljust.whatsdamgingerbread.model
 
 
 class Mensages(
